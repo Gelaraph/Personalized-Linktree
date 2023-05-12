@@ -1,13 +1,194 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Gotu&family=Inter:wght@600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Gotu", sans-serif;
+  text-align: center;
+}
+.App {
+  background: linear-gradient(
+    180deg,
+    rgba(85, 32, 2, 0.5642) 0%,
+    rgba(219, 195, 175, 0) 100%
+  );
+  height: 100%;
+  width: 100%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.topgrid-cont,
+.contact {
+  display: grid;
+  grid-template-columns: 0.7fr 1fr;
+}
+.links-div {
+  padding: 8em 2em 2em 2em;
+}
+.link_section {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 3em;
+}
+.links-btn {
+  background: #b96f4f;
+  border-radius: 70px;
+  margin-bottom: 1.5em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px 101px 12px 51px;
+  justify-content: space-around;
+}
+.links-btn:hover {
+  transform: scale(1.05);
+  transition: all 0.2s ease-in-out;
+}
+a h2 {
+  text-decoration: none;
+  font-weight: 400 !important;
+  font-size: 20px !important;
+  line-height: 33px;
+  color: #000000;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+.profile_section_content {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 1em;
+}
+.profile_section_content p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 23px;
+  text-align: center;
+  color: #4e1818;
+}
+h1 {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 50px;
+}
+.rightframe {
+  width: 100%;
+  height: 100%;
+}
+.contact-section {
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-bottom: 5em;
+}
+
+.linkedin-icon {
+  width: 70px;
+  height: 40px;
+  margin-left: -1em;
+}
+.icon {
+  width: 30px;
+  height: 30px;
+}
+.contact-title {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 53px;
+  text-align: center;
+  color: #b96f4f;
+  margin-top: 2em;
+}
+form {
+  text-align: start;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 2em;
+}
+form div {
+  margin-top: 0.8em;
+}
+label,
+textarea::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: #b96f4f;
+}
+input,
+textarea {
+  padding: 0.8em;
+  border: none;
+  border-bottom: 1px solid #b96f4f;
+  background-color: transparent;
+  outline: none;
+  width: 40%;
+}
+textarea {
+  padding: 0.8em;
+  border: none;
+  border-bottom: 1px solid #b96f4f;
+  background-color: transparent;
+  outline: none;
+  width: 100%;
+}
+.btn-div {
+  display: flex;
+  justify-content: end;
+  margin-top: 1em;
+}
+.send-btn {
+  width: 207px;
+  height: 57px;
+  background: #b96f4f;
+  box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.12);
+  border-radius: 5px;
+  padding: 15px 48px;
+  align-items: center;
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.send-image img {
+  margin-left: 9em;
+}
+
+@media (max-width: 1158px) {
+  .topgrid-cont,
+  .contact {
+    display: block;
+  }
+  .img-grid,
+  .left-bottom-cont,
+  .send-image {
+    display: none;
+  }
+  input,
+  textarea {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .topgrid-cont,
+  .contact {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.left-img {
+  width: 100%;
+  height: 100%;
+}
+
+.img_container .profile-img {
+  border-radius: 50%;
+  width: 190px;
 }
